@@ -1,0 +1,438 @@
+﻿body{
+    color: cornflowerblue;
+}
+
+
+.hcontainer {
+    /* Step 1: Set display to grid */
+    display: grid;
+    height: 100%;
+    /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+    grid-template-areas:
+        "hd"
+        "main"
+        "ft";
+    border: 2px solid yellow;
+}
+
+.hbox {
+    /* width: 250px;
+    height: 150px; */
+    border: 1px solid red;
+    background: #AFE1AF;
+}
+
+.hheader {
+    /* row start/column start/ row end/ column end */
+    grid-area: hd;
+    background-image:url('../Assests/homepageimage.jpg');
+    background-size: cover;
+
+}
+
+.hfooter {
+    grid-area: ft;
+}
+
+.hcontent {
+    grid-area: main;
+}
+
+#hnestedGrid {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*Equal width for all columns*/ 
+    grid-template-rows: 1fr;
+    /*Equal height for all rows*/ 
+    margin: auto;
+    grid-gap: 10px;
+    border: 2px solid red;
+    padding: 15px;
+}
+.hphotoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 15px;
+    width: 200px;
+    /*Adjust the width as needed*/ 
+    height: 200px;
+    /*Adjust the height as needed*/
+}
+
+
+.alink-button {
+    border: none;
+    background-color: lightpink;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    color: red;
+    text-decoration: underline;
+    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+    .alink-button:focus {
+        outline: none;
+    }
+
+.mlink-button {
+    border: none;
+    background-color: lightgreen;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    color: darkgreen;
+    text-decoration: underline;
+    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+    .mlink-button:focus {
+        outline: none;
+    }
+
+.slink-button {
+    border: none;
+    background-color: lightblue;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    color: darkblue;
+    text-decoration: underline;
+    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+    .slink-button:focus {
+        outline: none;
+    }
+
+.llink-button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    color: darkgrey;
+    text-decoration: underline;
+    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+    .llink-button:focus {
+        outline: none;
+    }
+
+
+#hone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid red;
+    background-image: url('../Assests/Artemistest.jpg');
+    background-size: contain;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#art{
+    color: lightcoral;
+    text-align: center;
+    align-self: flex-end;
+    background-color: darkred;
+}
+
+#artfig {
+    color: red;
+}
+#htwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Marktest.jpg');
+    background-size: contain;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#mark {
+    color: lightgreen;
+    text-align: center;
+    align-self: flex-end;
+    background-color: darkgreen;
+}
+
+#markfig {
+    color: forestgreen;
+}
+#hthree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solistest.jpg');
+    background-size: contain;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#sol {
+    color: lightblue;
+    text-align: center;
+    align-self: flex-end;
+}
+#solfig {
+    color:cornflowerblue;
+}
+    #hfour {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelottest.jpg');
+    background-size: contain;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#lance {
+    color: dimgray;
+    text-align: center;
+    align-self: flex-end;
+}
+#lancefig {
+    color: ghostwhite;
+}
+
+@media(min-width:600px) {
+    .hcontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        height: 100%;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 1fr;
+        grid-template-areas:
+            "hd"
+            "main"
+            "ft";
+        border: 2px solid yellow;
+    }
+    #hnestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        border: 2px solid red;
+        padding: 15px;
+    }
+
+
+    .hphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 250px;
+        /*Adjust the height as needed*/
+    }
+
+    .alink-button {
+        border: none;
+        background-color: lightpink;
+        cursor: pointer;
+        padding: 0;
+        font: inherit;
+        color: red;
+        text-decoration: underline;
+        display: inline;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .alink-button:focus {
+        outline: none;
+    }
+
+    .mlink-button {
+        border: none;
+        background-color: lightgreen;
+        cursor: pointer;
+        padding: 0;
+        font: inherit;
+        color: darkgreen;
+        text-decoration: underline;
+        display: inline;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .mlink-button:focus {
+        outline: none;
+    }
+
+    .slink-button {
+        border: none;
+        background-color: lightblue;
+        cursor: pointer;
+        padding: 0;
+        font: inherit;
+        color: darkblue;
+        text-decoration: underline;
+        display: inline;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .slink-button:focus {
+        outline: none;
+    }
+
+    .llink-button {
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        padding: 0;
+        font: inherit;
+        color: darkgrey;
+        text-decoration: underline;
+        display: inline;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,8);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .llink-button:focus {
+        outline: none;
+    }
+
+    #hone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid red;
+        background-color: lightcoral;
+        background-image: url('../Assests/Artemistest.jpg');
+        background-size: contain;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+        transition: 0.3s;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+
+    #art {
+        color: lightcoral;
+        text-align: center;
+        align-self: flex-end;
+        background-color: darkred;
+    }
+    #artfig {
+        color: red;
+        position: absolute;
+        bottom: 100px;
+    }
+
+    #htwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-color: lightgreen;
+        background-image: url('../Assests/Marktest.jpg');
+        background-size: contain;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+        transition: 0.3s;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+
+    #mark {
+        color: lightgreen;
+        text-align: center;
+        align-self: flex-end;
+    }
+    #markfig {
+        color: forestgreen;
+        position: absolute;
+        bottom: 100px;
+    }
+    #hthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-color: lightblue;
+        background-image: url('../Assests/Solistest.jpg');
+        background-size: contain;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+        transition: 0.3s;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+
+    #sol {
+        color: lightblue;
+        text-align: center;
+        align-self: flex-end;
+        background-color: darkblue;
+    }
+    #solfig {
+        color: cornflowerblue;
+        position: absolute;
+        bottom: -190px;
+    }
+
+    #hfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-color: grey;
+        background-image: url('../Assests/Lancelottest.jpg');
+        background-size: contain;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,4);
+        transition: 0.3s;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+
+    #lance {
+        color: dimgray;
+        text-align: center;
+        align-self: flex-end;
+        background-color:white;
+    }
+    #lancefig {
+        overflow-wrap:inherit;
+        color: ghostwhite;
+        position: absolute;
+        bottom: -190px;
+    }
+}

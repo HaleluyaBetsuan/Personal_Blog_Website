@@ -1,0 +1,367 @@
+﻿.scontainer {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 1fr 100px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "feat feat feat feat feat feat feat feat"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    border: 2px solid blue;
+    color: dodgerblue;
+}
+
+.sbox {
+    width: 100%;
+    border: 1px solid blue;
+    background: #9abddc;
+}
+
+.sheader {
+    grid-area: hd;
+    grid-area: hd;
+    background-image: url('../Assests/Solistest.jpg');
+    background-size: cover;
+}
+
+.sfooter {
+    grid-area: ft;
+}
+
+.sfeature {
+    grid-area: feat;
+    background-color: #BDD5E7;
+}
+
+.scontent {
+    grid-area: main;
+}
+
+#snestedGrid {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr ;
+    /*Equal width for all columns*/
+    grid-template-rows: 1fr;
+    /*Equal height for all rows*/
+    margin: auto;
+    grid-gap: 10px;
+    /*border: 2px solid red;*/
+    padding: 15px;
+}
+
+.sphotoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 15px;
+    width: 200px;
+    /*Adjust the width as needed*/
+    height: 200px;
+    /*Adjust the height as needed*/
+}
+
+#sone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solis1.png');
+    background-size: contain;
+}
+
+#stwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solis2.png');
+    background-size: contain;
+}
+
+#sthree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solis3.png');
+    background-size: contain;
+}
+
+#sfour {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solis4.png');
+    background-size: contain;
+}
+
+#sfive {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solis5.png');
+    background-size: contain;
+}
+
+#ssix {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid blue;
+    background-image: url('../Assests/Solis6.png');
+    background-size: contain;
+}
+
+@media(min-width:600px) and (max-width:1000px) {
+    .scontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 1fr 100px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 2px solid blue;
+        color: dodgerblue;
+    }
+
+    .sbox {
+        width: 100%;
+        border: 1px solid blue;
+        background: #9abddc;
+    }
+
+    .sheader {
+        grid-area: hd;
+        grid-area: hd;
+        background-image: url('../Assests/Solistest.jpg');
+        background-size: cover;
+    }
+
+    .sfooter {
+        grid-area: ft;
+    }
+
+    .sfeature {
+        grid-area: feat;
+        background-color: #BDD5E7;
+    }
+
+    .scontent {
+        grid-area: main;
+    }
+
+    #snestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        /*border: 2px solid red;*/
+        padding: 15px;
+    }
+
+    .sphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 200px;
+        /*Adjust the height as needed*/
+    }
+
+    #sone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis1.png');
+        background-size: contain;
+    }
+
+    #stwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis2.png');
+        background-size: contain;
+    }
+
+    #sthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis3.png');
+        background-size: contain;
+    }
+
+    #sfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis4.png');
+        background-size: contain;
+    }
+
+    #sfive {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis5.png');
+        background-size: contain;
+    }
+
+    #ssix {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis6.png');
+        background-size: contain;
+    }
+}
+
+@media(min-width:1001px) {
+    .scontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 600px 100px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 2px solid blue;
+        color: dodgerblue;
+    }
+
+    .sbox {
+        width: 100%;
+        border: 1px solid blue;
+        background: #9abddc;
+    }
+
+    .sheader {
+        grid-area: hd;
+        grid-area: hd;
+        background-image: url('../Assests/Solistest.jpg');
+        background-size: cover;
+    }
+
+    .sfooter {
+        grid-area: ft;
+    }
+
+    .sfeature {
+        grid-area: feat;
+        background-color: #BDD5E7;
+    }
+
+    .scontent {
+        grid-area: main;
+    }
+
+    #snestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        /*border: 2px solid red;*/
+        padding: 15px;
+    }
+
+    .sphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 200px;
+        /*Adjust the height as needed*/
+    }
+
+    #sone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis1.png');
+        background-size: contain;
+    }
+
+    #stwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis2.png');
+        background-size: contain;
+    }
+
+    #sthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis3.png');
+        background-size: contain;
+    }
+
+    #sfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis4.png');
+        background-size: contain;
+    }
+
+    #sfive {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis5.png');
+        background-size: contain;
+    }
+
+    #ssix {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid blue;
+        background-image: url('../Assests/Solis6.png');
+        background-size: contain;
+    }
+
+}

@@ -1,0 +1,366 @@
+﻿.lcontainer {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 1fr 100px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "feat feat feat feat feat feat feat feat"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    border: 2px grey;
+    color: dimgrey;
+}
+
+.lbox {
+    width: 100%;
+    border: 1px solid grey;
+    background: #f5f5f5;
+}
+
+.lheader {
+    grid-area: hd;
+    grid-area: hd;
+    background-image: url('../Assests/Lancelottest.jpg');
+    background-size: cover;
+}
+
+.lfooter {
+    grid-area: ft;
+}
+
+.lfeature {
+    grid-area: feat;
+    background-color: #ececec;
+}
+
+.lcontent {
+    grid-area: main;
+}
+
+#lnestedGrid {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*Equal width for all columns*/
+    grid-template-rows: 1fr;
+    /*Equal height for all rows*/
+    margin: auto;
+    grid-gap: 10px;
+    /*border: 2px solid red;*/
+    padding: 15px;
+}
+
+.lphotoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 15px;
+    width: 200px;
+    /*Adjust the width as needed*/
+    height: 200px;
+    /*Adjust the height as needed*/
+}
+
+#lone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelot1.png');
+    background-size: contain;
+}
+
+#ltwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelot2.png');
+    background-size: contain;
+}
+
+#lthree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelot3.png');
+    background-size: contain;
+}
+
+#lfour {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelot4.png');
+    background-size: contain;
+}
+
+#lfive {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelot5.png');
+    background-size: contain;
+}
+
+#lsix {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid white;
+    background-image: url('../Assests/Lancelot6.png');
+    background-size: contain;
+}
+@media(min-width:600px) and (max-width:1000px) {
+    .lcontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 1fr 100px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 2px solid grey;
+        color: dimgrey;
+    }
+
+    .lbox {
+        width: 100%;
+        border: 1px solid grey;
+        background: #f5f5f5;
+    }
+
+    .lheader {
+        grid-area: hd;
+        grid-area: hd;
+        background-image: url('../Assests/Lancelottest.jpg');
+        background-size: cover;
+    }
+
+    .lfooter {
+        grid-area: ft;
+    }
+
+    .lfeature {
+        grid-area: feat;
+        background-color: #ececec;
+    }
+
+    .lcontent {
+        grid-area: main;
+    }
+
+    #lnestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        /*border: 2px solid red;*/
+        padding: 15px;
+    }
+
+    .lphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 200px;
+        /*Adjust the height as needed*/
+    }
+
+    #lone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot1.png');
+        background-size: contain;
+    }
+
+    #ltwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot2.png');
+        background-size: contain;
+    }
+
+    #lthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot3.png');
+        background-size: contain;
+    }
+
+    #lfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot4.png');
+        background-size: contain;
+    }
+
+    #lfive {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot5.png');
+        background-size: contain;
+    }
+
+    #lsix {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot6.png');
+        background-size: contain;
+    }
+}
+
+@media(min-width:1001px) {
+    .lcontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 600px 100px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 2px solid grey;
+        color: dimgrey;
+    }
+
+    .lbox {
+        width: 100%;
+        border: 1px solid grey;
+        background: #f5f5f5;
+    }
+
+    .lheader {
+        grid-area: hd;
+        grid-area: hd;
+        background-image: url('../Assests/Lancelottest.jpg');
+        background-size: cover;
+    }
+
+    .lfooter {
+        grid-area: ft;
+    }
+
+    .lfeature {
+        grid-area: feat;
+        background-color: #ececec;
+    }
+
+    .lcontent {
+        grid-area: main;
+    }
+
+    #lnestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        /*border: 2px solid red;*/
+        padding: 15px;
+    }
+
+    .lphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 200px;
+        /*Adjust the height as needed*/
+    }
+
+    #lone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot1.png');
+        background-size: contain;
+    }
+
+    #ltwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot2.png');
+        background-size: contain;
+    }
+
+    #lthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot3.png');
+        background-size: contain;
+    }
+
+    #lfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot4.png');
+        background-size: contain;
+    }
+
+    #lfive {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot5.png');
+        background-size: contain;
+    }
+
+    #lsix {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid white;
+        background-image: url('../Assests/Lancelot6.png');
+        background-size: contain;
+    }
+
+}

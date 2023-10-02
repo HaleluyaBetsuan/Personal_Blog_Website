@@ -1,0 +1,366 @@
+﻿.mcontainer {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 1fr 100px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "feat feat feat feat feat feat feat feat"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    border: 2px solid green;
+    color: darkgreen;
+}
+
+.mbox {
+    width: 100%;
+    border: 1px solid green;
+    background: #00c04b;
+}
+
+.mheader {
+    grid-area: hd;
+    grid-area: hd;
+    background-image: url('../Assests/Marktest.jpg');
+    background-size: cover;
+}
+
+.mfooter {
+    grid-area: ft;
+}
+
+.mfeature {
+    grid-area: feat;
+    background-color: #83f28f;
+}
+
+.mcontent {
+    grid-area: main;
+}
+
+#mnestedGrid {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*Equal width for all columns*/
+    grid-template-rows: 1fr;
+    /*Equal height for all rows*/
+    margin: auto;
+    grid-gap: 10px;
+    /*border: 2px solid red;*/
+    padding: 15px;
+}
+
+.mphotoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 15px;
+    width: 200px;
+    /*Adjust the width as needed*/
+    height: 200px;
+    /*Adjust the height as needed*/
+}
+
+#mone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Mark1.png');
+    background-size: contain;
+}
+
+#mtwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Mark2.png');
+    background-size: contain;
+}
+
+#mthree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Mark3.png');
+    background-size: contain;
+}
+
+#mfour {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Mark4.png');
+    background-size: contain;
+}
+
+#mfive {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Mark5.png');
+    background-size: contain;
+}
+
+#msix {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url('../Assests/Mark6.png');
+    background-size: contain;
+}
+
+@media(min-width:600px) and (max-width:1000px) {
+    .mcontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 1fr 100px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 2px solid green;
+        color: darkgreen;
+    }
+
+    .mbox {
+        width: 100%;
+        border: 1px solid green;
+        background: #00c04b;
+    }
+
+    .mheader {
+        grid-area: hd;
+        grid-area: hd;
+        background-image: url('../Assests/Marktest.jpg');
+        background-size: cover;
+    }
+
+    .mfooter {
+        grid-area: ft;
+    }
+
+    .mfeature {
+        grid-area: feat;
+        background-color: #83f28f;
+    }
+
+    .mcontent {
+        grid-area: main;
+    }
+
+    #mnestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        /*border: 2px solid red;*/
+        padding: 15px;
+    }
+
+    .mphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 200px;
+        /*Adjust the height as needed*/
+    }
+
+    #mone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark1.png');
+        background-size: contain;
+    }
+
+    #mtwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark2.png');
+        background-size: contain;
+    }
+
+    #mthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark3.png');
+        background-size: contain;
+    }
+
+    #mfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark4.png');
+        background-size: contain;
+    }
+
+    #mfive {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark5.png');
+        background-size: contain;
+    }
+
+    #msix {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark6.png');
+        background-size: contain;
+    }
+}
+
+@media(min-width:1001px) {
+    .mcontainer {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 1fr 100px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 2px solid green;
+        color: darkgreen;
+    }
+
+    .mbox {
+        width: 100%;
+        border: 1px solid green;
+        background: #00c04b;
+    }
+
+    .mheader {
+        grid-area: hd;
+        grid-area: hd;
+        background-image: url('../Assests/Marktest.jpg');
+        background-size: cover;
+    }
+
+    .mfooter {
+        grid-area: ft;
+    }
+
+    .mfeature {
+        grid-area: feat;
+        background-color: #83f28f;
+    }
+
+    .mcontent {
+        grid-area: main;
+    }
+
+    #mnestedGrid {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*Equal width for all columns*/
+        grid-template-rows: 1fr 1fr;
+        /*Equal height for all rows*/
+        margin: auto;
+        grid-gap: 10px;
+        /*border: 2px solid red;*/
+        padding: 15px;
+    }
+
+    .mphotoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        padding: 15px;
+        width: 200px;
+        /*Adjust the width as needed*/
+        height: 200px;
+        /*Adjust the height as needed*/
+    }
+
+    #mone {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark1.png');
+        background-size: contain;
+    }
+
+    #mtwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark2.png');
+        background-size: contain;
+    }
+
+    #mthree {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark3.png');
+        background-size: contain;
+    }
+
+    #mfour {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark4.png');
+        background-size: contain;
+    }
+
+    #mfive {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark5.png');
+        background-size: contain;
+    }
+
+    #msix {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid green;
+        background-image: url('../Assests/Mark6.png');
+        background-size: contain;
+    }
+}
